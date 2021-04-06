@@ -1,0 +1,18 @@
+{
+	"name": "ihsaan_cloud",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"devserver": "npm run dev --prefix backend",
+		"devfrontend": "npm run dev --prefix frontend",
+		"dev": "concurrently \"npm run devserver\" \"npm run devfrontend\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^6.0.1"
+	}
+}
