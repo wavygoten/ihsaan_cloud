@@ -5,7 +5,7 @@ import Routes from "./routes/Router";
 function App() {
 	const [isLoading, setLoading] = useState(true);
 
-	function fakeRequest() {
+	const fakeRequest = () => {
 		return new Promise((resolve) => setTimeout(() => resolve(), 2500)).then(
 			() => {
 				const el = document.querySelector(".loader-container");
@@ -15,11 +15,11 @@ function App() {
 				}
 			}
 		);
-	}
+	};
 
 	useEffect(() => {
 		fakeRequest();
-	}, [isLoading]);
+	});
 
 	if (isLoading) return null;
 
