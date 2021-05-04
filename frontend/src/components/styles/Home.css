@@ -1,0 +1,109 @@
+/* * {
+	border: solid 1px red;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.custom {
+	color: #fff;
+	font-size: 26px;
+	font-weight: 500;
+	font-family: "Source Code Pro", monospace;
+	text-align: center;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.react-rotating-text-cursor {
+	animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+		infinite;
+}
+
+@keyframes blinking-cursor {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+img {
+	width: 30px;
+	height: auto;
+	opacity: 0.5;
+	margin: 0.75rem;
+	white-space: nowrap;
+}
+img:hover {
+	opacity: 1;
+}
+
+a {
+	cursor: pointer;
+}
+.header {
+	padding: 40px;
+}
+.typewriter h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	/* border-right: solid 3px rgba(0, 255, 0, 0.75); */
+	white-space: nowrap;
+	font-family: "Source Code Pro", monospace;
+	font-size: 28px;
+	color: rgba(255, 255, 255, 0.7);
+	margin: 0 auto;
+}
+
+/* Animation */
+h1 {
+	animation: animated-text 4s steps(29, end) 1s 1 normal both,
+		animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+	to {
+		width: 252px;
+	}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 255, 0, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+/* Filter styles
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); } */

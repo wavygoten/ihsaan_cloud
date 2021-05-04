@@ -1,0 +1,48 @@
+div {
+	color: white;
+	/* border: solid 1px red; */
+}
+
+.container {
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	/* flex-direction: row; */
+	/* flex-wrap: wrap; */
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+}
+
+.article-column {
+	order: 0;
+	flex: 0 1 auto;
+	/* flex: 1 1 250px; */
+
+	margin: 0 3rem 2rem 3rem;
+	padding: 5px;
+	width: 250px;
+	height: 350px;
+	background-color: #242424;
+	font-family: Helvetica;
+}
+
+.post-title {
+	font-weight: 500;
+	font-size: 28px;
+	font-family: inherit;
+}
+
+.post-subtitle {
+	font-weight: 100;
+	font-family: inherit;
+	font-size: 17px;
+}
+
+.cont-read {
+	text-decoration: none;
+	color: gray;
+	list-style: none;
+	cursor: pointer;
+}

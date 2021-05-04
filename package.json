@@ -8,8 +8,9 @@
 		"commit": "git add . && git commit -m 'update' && git push",
 		"devserver": "npm run dev --prefix backend",
 		"devfrontend": "npm start --prefix frontend",
-		"dev": "concurrently \"npm run devserver\" \"npm run devfrontend\"",
-		"postinstall": "npm install --prefix frontend && npm install --prefix backend"
+		"dev": "npm run devfrontend",
+		"devs": "concurrently \"npm run devserver\" \"npm run devfrontend\"",
+		"postinstall": "cd frontend && npm install && cd ../backend && npm install"
 	},
 	"keywords": [],
 	"author": "",

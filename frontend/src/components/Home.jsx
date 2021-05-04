@@ -1,9 +1,45 @@
 import React from "react";
+import LastFM from "./misc/lastfm.jsx";
+import twitterlogo from "../images/twittericon.png";
+import maillogo from "../images/envelope-solid-24.png";
+import ReactRotatingText from "react-rotating-text";
 
 const Home = () => {
 	return (
 		<div>
-			<h1>Hello</h1>
+			<header className="header">
+				{/* <div class="typewriter">
+					<h1>Ihsaan Bijapuri</h1>
+				</div> */}
+				<div className="custom">
+					<ReactRotatingText
+						pause={2500}
+						typingInterval={65}
+						deletingInterval={65}
+						cursor={false}
+						items={[
+							"Hello, stranger",
+							"Welcome to the Cloud",
+							"Feel Free to Look Around :)",
+						]}
+					/>
+				</div>
+			</header>
+			<footer className="footer">
+				<a
+					href="https://twitter.com/dev_ihshuu"
+					target="_blank"
+					rel="noreferrer"
+				>
+					{" "}
+					<img src={twitterlogo} alt="twitter-icon" />
+				</a>
+				<a href="mailto:ihsaan.b@yahoo.com" target="_blank" rel="noreferrer">
+					{" "}
+					<img src={maillogo} alt="mail-icon" />
+				</a>
+				<LastFM />
+			</footer>
 		</div>
 	);
 };
