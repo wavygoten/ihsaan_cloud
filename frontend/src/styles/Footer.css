@@ -1,0 +1,25 @@
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+.footer img {
+	width: 30px;
+	height: auto;
+	opacity: 0.5;
+	margin: 0.75rem;
+	white-space: nowrap;
+}
+.footer img:hover {
+	opacity: 1;
+}
+
+a {
+	cursor: pointer;
+}

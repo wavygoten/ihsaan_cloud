@@ -1,0 +1,100 @@
+.modal-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	/* transform: translate(-50%, -200%); */
+	/* transform-origin: 50% 50%; */
+	animation: slideDown ease-out 450ms;
+	animation-fill-mode: forwards;
+	/* animation-iteration-count: 1; */
+	height: 400px;
+	width: 300px;
+	background-color: #202526;
+	/* background-color: #242424; */
+	/* border: 1px solid white; */
+	border-radius: 7px;
+	box-shadow: 0px 5px 15px 1px rgba(30, 30, 30, 0.75);
+	user-select: none;
+}
+
+.modal-content {
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	content: 100%;
+	color: #f4f4f4;
+}
+#modal-picture {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	width: 75px;
+	height: 75px;
+	background-image: url("../../../images/githubavi.jpeg");
+	border-radius: 50%;
+	background-size: cover;
+}
+.modal-title {
+	margin-top: 4rem;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+	margin-bottom: 1.25rem;
+	font-size: 20px;
+	font-weight: 250;
+}
+.modal-description {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 150;
+	padding: 7px;
+	/* word-wrap: break-word; */
+	width: auto;
+	line-height: 1.35rem;
+	column-count: 1;
+}
+
+.modal-description > ul {
+	font-size: medium;
+	text-align: center;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.modal-description > ul > li {
+	padding: 0 0 1rem 0;
+}
+
+.modal-footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0 1.5rem 1.5rem 0;
+	color: white;
+	text-decoration: none;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.modal-footer:hover {
+	transition: all 200ms ease-out;
+	box-shadow: 0 -1px 0 0 white inset;
+	cursor: pointer;
+}
+
+/* slide down animation */
+
+@keyframes slideDown {
+	0% {
+		transform: translate(-50%, -200%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+/* slide down animation */

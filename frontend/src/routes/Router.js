@@ -4,7 +4,10 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 const home = lazy(() => import("../components/pages/Home"));
 const blog = lazy(() => import("../components/pages/Blog"));
+const about = lazy(() => import("../components/pages/About"));
+
 const Navbar = lazy(() => import("../components/Navbar.jsx"));
+const Footer = lazy(() => import("../components/Footer.jsx"));
 const Routes = () => {
 	const LazyLoad = () => {
 		useEffect(() => {
@@ -25,10 +28,10 @@ const Routes = () => {
 				<Switch>
 					<Route exact path="/" component={home} />
 					<Route exact path="/blog" component={blog} />
-					<Route exact path="/about-me" component={blog} />
-
+					<Route exact path="/about-me" component={about} />
 					<Route component={home} />
 				</Switch>
+				<Footer />
 			</Suspense>
 		</Router>
 	);

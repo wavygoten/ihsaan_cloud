@@ -1,13 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./styles/Blog.css";
-
-// import Popup from "./modal/modal";
-
-/* <div className="popup" id="popup">
-				<Popup />{" "}
-			</div> */
+import "../styles/Blog.css";
 
 const Blog = () => {
 	const [blogs, setBlogs] = React.useState([]);
@@ -19,7 +13,7 @@ const Blog = () => {
 					`${process.env.REACT_APP_API_URL}/api/article/`
 				);
 				setBlogs(res.data);
-				console.log(blogs[0]);
+				// console.log(blogs[0]);
 			} catch (err) {}
 		};
 		fetchBlogs();

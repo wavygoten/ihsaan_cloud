@@ -1,6 +1,6 @@
 html {
 	height: 100%;
-	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	/* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
 	/* background-image: url("/Users/homeosx/FunStuffLearnJS/ihsaan_cloud/frontend/src/images/image0.jpg"); */
 	/* background-image: linear-gradient(
 		to right top,
@@ -10,6 +10,7 @@ html {
 		#313a5e,
 		#43454c
 	); */
+	background: #202526;
 	overflow-y: auto;
 	overflow-x: hidden;
 	scroll-behavior: smooth;

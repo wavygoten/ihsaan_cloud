@@ -4,15 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-	width: 100%;
+.header {
+	padding: 40px;
 }
 
 .custom {
@@ -42,23 +35,24 @@
 	}
 }
 
-img {
-	width: 30px;
-	height: auto;
-	opacity: 0.5;
-	margin: 0.75rem;
-	white-space: nowrap;
+.content {
+	margin: 2rem;
+	padding: 1px;
 }
-img:hover {
-	opacity: 1;
+.image-container {
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	width: 400px;
+	height: 120px;
+	transition: box-shadow 0.3s ease-in-out;
+}
+.changing-images {
+	width: 100%;
+	height: auto;
 }
 
-a {
-	cursor: pointer;
-}
-.header {
-	padding: 40px;
-}
 .typewriter h1 {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	/* border-right: solid 3px rgba(0, 255, 0, 0.75); */
@@ -96,6 +90,52 @@ h1 {
 		border-right-color: transparent;
 	}
 }
+
+/* fade images */
+
+/* .image-container img {
+	-webkit-animation-name: fade;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+	}
+	53% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+	}
+	53% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+} */
 
 /* Filter styles
 .saturate { filter: saturate(3); }

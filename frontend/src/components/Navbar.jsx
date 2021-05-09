@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import Burger from "./burger/Burger";
-import Menu from "./burger/Menu";
-import { useOnClickOutside } from "./burger/hooks";
-import { theme } from "./burger/theme";
+import Burger from "./misc/burger/Burger";
+import Menu from "./misc/burger/Menu";
+import { useOnClickOutside } from "./misc/burger/hooks";
+import { theme } from "./misc/burger/theme";
 import { NavLink } from "react-router-dom";
-import "./styles/Navbar.css";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
 				<div className="navbar-container">
 					<li className="item">
 						<NavLink to="/blog" className="nav-links">
-							Blog <i />
+							Articles <i />
 						</NavLink>
 					</li>
 					<li className="item">

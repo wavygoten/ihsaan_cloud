@@ -1,9 +1,7 @@
 import React from "react";
-import LastFM from "./misc/lastfm.jsx";
-import twitterlogo from "../images/twittericon.png";
-import maillogo from "../images/envelope-solid-24.png";
-import ReactRotatingText from "react-rotating-text";
 
+import ReactRotatingText from "react-rotating-text";
+// import Pixelbay from "./Pixelbay.jsx";
 const Home = () => {
 	return (
 		<div>
@@ -14,32 +12,23 @@ const Home = () => {
 				<div className="custom">
 					<ReactRotatingText
 						pause={2500}
-						typingInterval={65}
-						deletingInterval={65}
+						typingInterval={50}
+						deletingInterval={50}
 						cursor={false}
-						items={[
-							"Hello, stranger",
-							"Welcome to the Cloud",
-							"Feel Free to Look Around :)",
-						]}
+						items={["Welcome to my Cloud", "Feel Free to Look Around :)"]}
 					/>
 				</div>
 			</header>
-			<footer className="footer">
-				<a
-					href="https://twitter.com/dev_ihshuu"
-					target="_blank"
-					rel="noreferrer"
-				>
-					{" "}
-					<img src={twitterlogo} alt="twitter-icon" />
-				</a>
-				<a href="mailto:ihsaan.b@yahoo.com" target="_blank" rel="noreferrer">
-					{" "}
-					<img src={maillogo} alt="mail-icon" />
-				</a>
-				<LastFM />
-			</footer>
+			<div className="content">
+				<div className="image-container">
+					{/* <img
+						className="changing-images"
+						src="https://i.pinimg.com/564x/86/ff/b8/86ffb87572d657f335cd7cd828c70de3.jpg"
+						alt=""
+					/> */}
+					{/* <Pixelbay /> */}
+				</div>
+			</div>
 		</div>
 	);
 };
