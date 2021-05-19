@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./modal.css";
-
+import twitterlogo from "../../../images/twitter.svg";
+import github from "../../../images/github-icon.svg";
+import instagram from "../../../images/instagram-icon.svg";
 const Popup = () => {
 	const [check, setcheck] = useState(true);
 	const [all, setall] = useState();
@@ -32,13 +34,13 @@ const Popup = () => {
 		return setall(
 			<>
 				<div className="modal-description">
-					Hello there! I'm a web developer based in Chicago. I'm 21 years old
-					and a self taught programmer. Some things I enjoy in my free time
-					other than coding are tennis/basketball, music, sneakers, fashion, and
-					traveling. If you don't know me and want to get to know me more, or
-					maybe become friends 😄 , message me directly thru my Twitter, E-mail,
-					or Telegram!
+					Heya! I'm a web developer based in Chicago. Some things I enjoy in my
+					free time other than coding are tennis/basketball, music, sneakers,
+					fashion, and traveling. If you don't know me and want to get to know
+					me more, or maybe become friends 😄 , message me directly thru any of
+					my connections below!
 				</div>
+
 				<span className="modal-footer" onClick={getExperience}>
 					Skills ⇒
 				</span>
@@ -58,7 +60,7 @@ const Popup = () => {
 			<div className="modal-container">
 				<div className="modal-content">
 					<div id="modal-picture"></div>
-					<div className="modal-title">Fullstack Developer</div>
+					<div className="modal-title">Ihsaan Bijapuri</div>
 					{/* <div className="modal-description">{all}</div> */}
 					{all}
 					{/* change to button and render state */}
@@ -68,6 +70,38 @@ const Popup = () => {
 					{/* <span className="modal-footer" onClick={getExperience}>
 						Experience ⇒
 					</span> */}
+
+					<div className="modal-icons">
+						<li>
+							<a
+								href="https://twitter.com/dev_ihshuu"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={twitterlogo} alt="" />
+							</a>
+						</li>
+						<li>
+							{" "}
+							<a
+								href="https://github.com/wavygoten"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={github} alt="" />
+							</a>
+						</li>
+						<li>
+							{" "}
+							<a
+								href="https://instagram.com/ihsaan_bijapuri"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={instagram} alt="" />
+							</a>
+						</li>
+					</div>
 				</div>
 			</div>
 		</>

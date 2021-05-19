@@ -7,7 +7,7 @@ const blog = lazy(() => import("../components/pages/Blog"));
 const about = lazy(() => import("../components/pages/About"));
 const Navbar = lazy(() => import("../components/Navbar.jsx"));
 const Footer = lazy(() => import("../components/Footer.jsx"));
-
+const games = lazy(() => import("../components/Games.jsx"));
 const Routes = () => {
 	const LazyLoad = () => {
 		useEffect(() => {
@@ -29,6 +29,7 @@ const Routes = () => {
 					<Route exact path="/" component={home} />
 					<Route exact path="/blog" component={blog} />
 					<Route exact path="/about-me" component={about} />
+					<Route exact path="/games" component={games} />
 					<Route component={home} />
 				</Switch>
 				<Footer />

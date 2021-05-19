@@ -5,7 +5,8 @@ import { useOnClickOutside } from "./misc/burger/hooks";
 import { theme } from "./misc/burger/theme";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
-
+import ReactRotatingText from "react-rotating-text";
+import clouds from "../images/cloudy.png";
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
@@ -17,20 +18,25 @@ const Navbar = () => {
 				{/* <span>image</span> */}
 				<div className="navbar-container">
 					<li className="item">
-						<NavLink to="/blog" className="nav-links">
-							Articles <i />
+						<NavLink to="/games" className="nav-links">
+							Games <i />
 						</NavLink>
 					</li>
-					<li className="item">
-						<NavLink to="/about-me" className="nav-links">
-							About <i />
-						</NavLink>
-					</li>
+
 					<li className="item">
 						<NavLink to="/home" className="nav-links">
 							Home <i />
 						</NavLink>
 					</li>
+					<div>
+						<ReactRotatingText
+							pause={2500}
+							typingInterval={50}
+							deletingInterval={50}
+							cursor={false}
+							items={["Welcome to my Cloud", "Feel Free to Look Around :)"]}
+						/>
+					</div>
 				</div>
 			</div>
 			{/* <div className="mobile-navbar-container" ref={node}>

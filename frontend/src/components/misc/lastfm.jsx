@@ -23,6 +23,7 @@ const Circle = styled.div`
 	background-color: #37cc5a;
 	border-radius: 50%;
 	display: inline-block;
+	margin-right: 2px;
 `;
 
 const RedCircle = styled.div`
@@ -31,6 +32,7 @@ const RedCircle = styled.div`
 	background-color: #cc3333;
 	border-radius: 50%;
 	display: inline-block;
+	margin-right: 2px;
 `;
 // const ImgContainer = styled.div`
 // 	position: fixed;

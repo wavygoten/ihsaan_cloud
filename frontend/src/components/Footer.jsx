@@ -10,21 +10,12 @@ const Footer = () => {
 		<>
 			<footer className="footer">
 				<div className="container">
-					<div className="sm-logos">
-						<li>
-							<a
-								href="https://twitter.com/dev_ihshuu"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={twitterlogo} alt="" />
-							</a>
-						</li>
-						<li>
-							{" "}
-							<img src={maillogo} alt="" />
-						</li>{" "}
-						<LastFM />
+					<div className="flexer">
+						<div>
+							<LastFM />
+						</div>
+
+						<li>Copyright © 2021 Naashi ~ Made With &#128153;</li>
 					</div>
 				</div>
 			</footer>

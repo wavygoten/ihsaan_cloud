@@ -1,0 +1,12 @@
+#gameContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#gameScreen {
+	background: #202526;
+	color: #fff;
+
+	padding: 55px 75px 35px 75px;
+}

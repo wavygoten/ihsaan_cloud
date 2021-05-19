@@ -10,31 +10,36 @@
 
 .footer .container {
 	margin: 0 0 0.5rem 0;
+	padding: 2px;
 	height: 35px;
 }
-.sm-logos {
+.flexer {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-end;
-	align-content: flex-end;
-	align-items: flex-end;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin: 0 4rem;
 }
 
-.sm-logos > li {
+.flexer > li {
+	order: 0;
+	flex: 1 1 auto;
+	align-self: auto;
+	list-style: none;
+	text-decoration: none;
+	text-align: right;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	opacity: 0.5;
+	user-select: none;
+}
+
+.flexer > div {
 	order: 0;
 	flex: 0 1 auto;
 	align-self: auto;
-	list-style: none;
-	margin: 0 1rem;
-	text-decoration: none;
-	text-align: center;
-}
-
-.sm-logos > div {
-	order: 0;
-	flex: 0 1 auto;
-	align-self: center;
-	margin: 0 1rem;
 }
 
 .footer img {

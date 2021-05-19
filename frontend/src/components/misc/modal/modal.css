@@ -41,7 +41,7 @@
 	justify-content: center;
 	align-self: center;
 	text-align: center;
-	margin-bottom: 1.25rem;
+	margin-bottom: 1.5rem;
 	font-size: 20px;
 	font-weight: 250;
 }
@@ -74,10 +74,45 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	margin: 0 1.5rem 1.5rem 0;
+	margin: 0 1.25rem 1.25rem 0;
 	color: white;
 	font-size: medium;
 	font-weight: bold;
+}
+
+.modal-icons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 1.25rem 1.25rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+}
+
+.modal-icons > li {
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	list-style: none;
+	padding: 0 0.75rem;
+}
+
+.modal-icons > li > a {
+	text-decoration: none;
+}
+
+.modal-icons > li > a > img {
+	width: 20px;
+	height: auto;
+	opacity: 0.5;
+}
+
+.modal-icons > li > a > img:hover {
+	transition: ease-in 200ms;
+	opacity: 1;
 }
 
 .modal-footer:hover {
