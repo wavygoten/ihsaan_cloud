@@ -1,13 +1,13 @@
-import React, { useState, Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 const home = lazy(() => import("../components/pages/Home"));
 const blog = lazy(() => import("../components/pages/Blog"));
 const about = lazy(() => import("../components/pages/About"));
-
 const Navbar = lazy(() => import("../components/Navbar.jsx"));
 const Footer = lazy(() => import("../components/Footer.jsx"));
+
 const Routes = () => {
 	const LazyLoad = () => {
 		useEffect(() => {

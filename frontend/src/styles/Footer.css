@@ -1,19 +1,46 @@
+* {
+	/* border: 1px solid red; */
+}
 .footer {
-	position: fixed;
-	left: 0;
+	background-color: transparent;
+	position: absolute;
 	bottom: 0;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
 	width: 100%;
+}
+
+.footer .container {
+	margin: 0 0 0.5rem 0;
+	height: 35px;
+}
+.sm-logos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-items: flex-end;
+}
+
+.sm-logos > li {
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	list-style: none;
+	margin: 0 1rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.sm-logos > div {
+	order: 0;
+	flex: 0 1 auto;
+	align-self: center;
+	margin: 0 1rem;
 }
 
 .footer img {
 	width: 30px;
 	height: auto;
 	opacity: 0.5;
-	margin: 0.75rem;
 	white-space: nowrap;
 }
 .footer img:hover {

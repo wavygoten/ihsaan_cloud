@@ -32,8 +32,8 @@ const Popup = () => {
 		return setall(
 			<>
 				<div className="modal-description">
-					Hello there! I'm a web/app developer based in Chicago. I'm 21 years
-					old and a self taught programmer. Some things I enjoy in my free time
+					Hello there! I'm a web developer based in Chicago. I'm 21 years old
+					and a self taught programmer. Some things I enjoy in my free time
 					other than coding are tennis/basketball, music, sneakers, fashion, and
 					traveling. If you don't know me and want to get to know me more, or
 					maybe become friends 😄 , message me directly thru my Twitter, E-mail,

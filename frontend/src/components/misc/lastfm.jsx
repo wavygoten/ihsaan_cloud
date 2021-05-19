@@ -7,14 +7,11 @@ import { css, jsx } from "@emotion/react";
 const Para = styled.div`
 	font: Helvetica;
 	color: #fff;
-	position: fixed;
-	bottom: 0;
-	right: 0;
 	font-size: 15px;
 	user-select: none;
 	opacity: 0.5;
-	margin: 0 1.25rem 1.25rem 0;
 	padding: 2px;
+	text-align: right;
 	&:hover {
 		transition: 500ms;
 		opacity: 1;
@@ -57,22 +54,18 @@ const LastFM = () => {
 
 	if (lastFM.status !== "playing") {
 		return (
-			<div>
-				<Para className="spotify-footer">
-					<RedCircle /> Spotify Offline
-				</Para>
-			</div>
+			<Para className="spotify-footer">
+				<RedCircle /> Spotify Offline
+			</Para>
 		);
 	}
 	return (
-		<div>
-			<Para className="spotify-footer">
-				<Circle /> Listening to <b>{lastFM.song.name}</b> by{" "}
-				<b>
-					<i>{lastFM.song.artist}</i>
-				</b>
-			</Para>
-		</div>
+		<Para className="spotify-footer">
+			<Circle /> Listening to <b>{lastFM.song.name}</b> by{" "}
+			<b>
+				<i>{lastFM.song.artist}</i>
+			</b>
+		</Para>
 	);
 };
 

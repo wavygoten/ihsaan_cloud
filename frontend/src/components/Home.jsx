@@ -4,7 +4,7 @@ import ReactRotatingText from "react-rotating-text";
 // import Pixelbay from "./Pixelbay.jsx";
 const Home = () => {
 	return (
-		<div>
+		<div style={{ overflowX: "none", overflowY: "none" }}>
 			<header className="header">
 				{/* <div class="typewriter">
 					<h1>Ihsaan Bijapuri</h1>

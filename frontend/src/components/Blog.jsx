@@ -26,14 +26,16 @@ const Blog = () => {
 		blogs.map((blogPost) => {
 			return list.push(
 				<>
-					<h2 className="post-title">{blogPost.title}</h2>
-					<h3 className="post-subtitle">
-						{blogPost.content.substring(0, 250)} ...
-					</h3>
-					<Link to={`/blog/${blogPost.id}`} className="cont-read">
-						Continue reading
-					</Link>
-					<p className="post-meta">{blogPost.date_created}</p>
+					<div className="article-container">
+						<h2 className="post-title">{blogPost.title}</h2>
+						{/* <h3 className="post-subtitle">
+							{blogPost.content.substring(0, 250)} ...
+						</h3> */}
+						<Link to={`/blog/${blogPost.id}`} className="cont-read">
+							Continue reading
+						</Link>
+						<p className="post-meta">{blogPost.date_created}</p>
+					</div>
 				</>
 			);
 		});
