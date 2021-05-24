@@ -18,24 +18,21 @@ const Navbar = () => {
 				{/* <span>image</span> */}
 				<div className="navbar-container">
 					<li className="item">
-						<NavLink to="/games" className="nav-links">
-							Games <i />
+						<NavLink to="/about-me" className="nav-links">
+							About Me <i />
 						</NavLink>
 					</li>
 
-					<li className="item">
-						<NavLink to="/home" className="nav-links">
-							Home <i />
-						</NavLink>
-					</li>
 					<div>
-						<ReactRotatingText
-							pause={2500}
-							typingInterval={50}
-							deletingInterval={50}
-							cursor={false}
-							items={["Welcome to my Cloud", "Feel Free to Look Around :)"]}
-						/>
+						<NavLink to="/">
+							<ReactRotatingText
+								pause={2500}
+								typingInterval={50}
+								deletingInterval={50}
+								cursor={false}
+								items={["Welcome to my Cloud", "Feel Free to Look Around :)"]}
+							/>
+						</NavLink>
 					</div>
 				</div>
 			</div>

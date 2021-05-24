@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/Blog.css";
-
+import Mario from "./Mario.jsx";
 const Blog = () => {
 	const [blogs, setBlogs] = React.useState([]);
 
@@ -71,7 +71,8 @@ const Blog = () => {
 
 	return (
 		<div>
-			<div className="container">{getBlogs()} </div>
+			{/* <div className="container">{getBlogs()} </div> */}
+			<Mario />
 		</div>
 	);
 };

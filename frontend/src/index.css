@@ -1,3 +1,7 @@
+/* * {
+	border: 1px solid red;
+} */
+
 html {
 	height: 100%;
 	/* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
@@ -121,19 +125,60 @@ code {
 
 /** MEDIA QUERIES **/
 
+/* mobile*/
+@media (max-width: 480px) {
+	/* NAVBAR */
+	.navbar > div {
+		margin: 0 0.4rem 0 5rem;
+		padding: 0 0.4rem 0 5rem;
+	}
+	.navbar > div > li {
+		padding: 0 0.3rem;
+	}
+	.navbar > div > li > a {
+		font-size: 15px;
+	}
+	.navbar > div > div {
+		font-size: 13px;
+		margin-right: 1rem;
+	}
+	/* NAVBAR */
+
+	/* Footer */
+
+	.footer > div > div {
+		margin: 0 0.75rem;
+	}
+	.footer > div > div > div > div {
+		font-size: 10px;
+	}
+	.footer > div > div > li {
+		font-size: 8px;
+	}
+
+	/* Footer */
+}
+
+/* tablets*/
+
+@media (max-width: 960px) {
+}
+
+/* laptops/desktops */
+@media (min-width: 1025px) {
+}
+
+/* hi res laptops */
+@media (max-width: 1280px) {
+}
+
 /* fix footer */
 
-/* @media screen and (max-device-width: 812px) {
-	.navbar-container {
-		justify-content: center;
-	}
-} */
+@media screen and (max-device-width: 500px) {
+}
 
-/* @media screen and (min-device-width: 813px) {
-	.mobile-navbar-container {
-		display: none !important;
-	}
-} */
+@media screen and (min-device-width: 813px) {
+}
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	.article-column {

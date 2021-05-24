@@ -29,6 +29,10 @@
 	user-select: none;
 	white-space: nowrap;
 }
+.navbar-container > div > a {
+	text-decoration: none;
+	color: #fff;
+}
 
 .item {
 	order: 0;

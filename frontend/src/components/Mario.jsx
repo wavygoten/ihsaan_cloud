@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Card, Board } from "./mariocard";
-import generateBoard from "./mariocard/Board/BoardGenerator";
+import { Card, Board } from "./games/mariocard";
+import generateBoard from "./games/mariocard/Board/BoardGenerator";
 import "../styles/Mario.css";
 
 export default class Mario extends React.Component {

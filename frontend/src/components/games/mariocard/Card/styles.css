@@ -30,7 +30,7 @@
 
 .card__face--front {
 	border-radius: 3px;
-	background: url("./card-front.png");
+	background: url("./zamorak-card.jpg");
 	background-size: cover;
 	-webkit-box-shadow: 8px 8px 5px -1px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 8px 8px 5px -1px rgba(0, 0, 0, 1);

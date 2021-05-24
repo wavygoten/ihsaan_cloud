@@ -4,6 +4,13 @@ import twitterlogo from "../images/twitter.svg";
 import maillogo from "../images/envelope-solid-24.png";
 import "../styles/Footer.css";
 
+import styled from "@emotion/styled";
+/** @jsxRuntime classic /
+/** @jsx jsx */
+import { jsx } from "@emotion/react";
+
+const Container = styled.div``;
+
 const Footer = () => {
 	// flex footer? maybe
 	return (

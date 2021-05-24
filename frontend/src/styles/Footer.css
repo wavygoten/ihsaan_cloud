@@ -1,17 +1,17 @@
 * {
 	/* border: 1px solid red; */
 }
+
 .footer {
 	background-color: transparent;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
+	margin-top: auto;
 }
 
 .footer .container {
-	margin: 0 0 0.5rem 0;
 	padding: 2px;
 	height: 35px;
+	margin-top: auto;
 }
 .flexer {
 	display: flex;

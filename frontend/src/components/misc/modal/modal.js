@@ -34,11 +34,11 @@ const Popup = () => {
 		return setall(
 			<>
 				<div className="modal-description">
-					Heya! I'm a web developer based in Chicago. Some things I enjoy in my
-					free time other than coding are tennis/basketball, music, sneakers,
-					fashion, and traveling. If you don't know me and want to get to know
-					me more, or maybe become friends 😄 , message me directly thru any of
-					my connections below!
+					Heya! I'm a fullstack web developer based in Chicago. Some things I
+					enjoy in my free time other than coding are tennis/basketball, music,
+					sneakers, fashion, and traveling. If you don't know me and want to get
+					to know me more, or maybe become friends 😄 , message me directly thru
+					any of my connections below!
 				</div>
 
 				<span className="modal-footer" onClick={getExperience}>

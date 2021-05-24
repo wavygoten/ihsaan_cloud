@@ -1,0 +1,36 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: #ededed;
+	padding: 1px;
+	border: 3px solid #cfcfcf;
+}
+
+.grid.game-over {
+	border: 3px solid #ffabab;
+}
+
+.row {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.cell {
+	width: 15px;
+	height: 15px;
+	background-color: #ededed;
+}
+
+.cell.snake {
+	background-color: #55aec9;
+}
+
+.cell.food {
+	background-color: #408c3e;
+}
