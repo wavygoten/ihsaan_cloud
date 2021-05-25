@@ -129,25 +129,24 @@ code {
 @media (max-width: 480px) {
 	/* NAVBAR */
 	.navbar > div {
-		margin: 0 0.4rem 0 5rem;
-		padding: 0 0.4rem 0 5rem;
+		margin: 0 2rem 0 2.5rem;
+		padding: 0;
 	}
 	.navbar > div > li {
 		padding: 0 0.3rem;
 	}
 	.navbar > div > li > a {
-		font-size: 15px;
+		font-size: 14.5px;
 	}
 	.navbar > div > div {
-		font-size: 13px;
-		margin-right: 1rem;
+		font-size: 14.5px;
 	}
 	/* NAVBAR */
 
 	/* Footer */
 
 	.footer > div > div {
-		margin: 0 0.75rem;
+		margin: 0 0.5rem;
 	}
 	.footer > div > div > div > div {
 		font-size: 10px;

@@ -1,0 +1,85 @@
+DEVELOP CONTAINER
+
+commands: 
+
+
+tag + build:
+docker build -t ihsaan-cloud:dev .
+
+
+run container:
+docker run -it --rm \
+-v ${PWD}:/app \
+-v /app/node_modules \
+-p 3001:3000 \
+-e CHOKIDAR_USEPOLLING=true \
+ihsaan-cloud:dev  
+
+Stop the container:
+
+^C.
+
+check container:
+
+docker ps
+
+docker exec -it container id
+
+stop container:
+
+docker stop container id
+
+build image and spin up container:
+
+docker-compose up -d --build
+
+check compose container: 
+
+docker-compose ps
+
+stop container: 
+
+docker-compose stop
+
+
+PROD CONTAINER
+
+commands:
+
+build + tag:
+
+docker build -f Dockerfile.prod -t ihsaan-cloud:prod .
+
+
+spin up container:
+
+docker run -it --rm -p 9421:80 ihsaan-cloud:prod
+
+
+check container: * use another terminal *
+
+docker ps
+
+docker exec -it container-id sh
+
+go to localhost:9421 to view app
+
+create docker-compose.prod.yaml file and check port
+
+then spin up container:
+
+docker-compose -f docker-compose.prod.yaml up -d --build
+
+check container:
+
+docker ps
+
+go to localhost:8898
+
+check process
+
+docker exec -it container-id sh
+
+stop container
+
+docker stop container id

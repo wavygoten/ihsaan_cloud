@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./modal.css";
 import twitterlogo from "../../../images/twitter.svg";
 import github from "../../../images/github-icon.svg";
@@ -7,6 +7,7 @@ import instagram from "../../../images/instagram-icon.svg";
 const Popup = () => {
 	const [check, setcheck] = useState(true);
 	const [all, setall] = useState();
+	const history = useHistory();
 
 	const getExperience = () => {
 		setcheck(false);
@@ -57,50 +58,60 @@ const Popup = () => {
 	return (
 		// fuck it just make ur own component
 		<>
-			<div className="modal-container">
-				<div className="modal-content">
-					<div id="modal-picture"></div>
-					<div className="modal-title">Ihsaan Bijapuri</div>
-					{/* <div className="modal-description">{all}</div> */}
-					{all}
-					{/* change to button and render state */}
-					{/* <NavLink to="/experience" className="modal-footer">
+			<div className="content">
+				<div className="modal-container">
+					<div className="modal-content">
+						<div id="modal-picture"></div>
+						<button
+							className="back-btn"
+							onClick={() => {
+								history.goBack();
+							}}
+						>
+							⇐ Back
+						</button>
+						<div className="modal-title">Ihsaan Bijapuri</div>
+						{/* <div className="modal-description">{all}</div> */}
+						{all}
+						{/* change to button and render state */}
+						{/* <NavLink to="/experience" className="modal-footer">
 						Experience &#8594;
 					</NavLink> */}
-					{/* <span className="modal-footer" onClick={getExperience}>
+						{/* <span className="modal-footer" onClick={getExperience}>
 						Experience ⇒
 					</span> */}
 
-					<div className="modal-icons">
-						<li>
-							<a
-								href="https://twitter.com/dev_ihshuu"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={twitterlogo} alt="" />
-							</a>
-						</li>
-						<li>
-							{" "}
-							<a
-								href="https://github.com/wavygoten"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={github} alt="" />
-							</a>
-						</li>
-						<li>
-							{" "}
-							<a
-								href="https://instagram.com/ihsaan_bijapuri"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={instagram} alt="" />
-							</a>
-						</li>
+						<div className="modal-icons">
+							<li>
+								<a
+									href="https://twitter.com/dev_ihshuu"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<img src={twitterlogo} alt="" />
+								</a>
+							</li>
+							<li>
+								{" "}
+								<a
+									href="https://github.com/wavygoten"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<img src={github} alt="" />
+								</a>
+							</li>
+							<li>
+								{" "}
+								<a
+									href="https://instagram.com/ihsaan_bijapuri"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<img src={instagram} alt="" />
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -17,12 +17,6 @@ const Navbar = () => {
 			<div className="navbar">
 				{/* <span>image</span> */}
 				<div className="navbar-container">
-					<li className="item">
-						<NavLink to="/about-me" className="nav-links">
-							About Me <i />
-						</NavLink>
-					</li>
-
 					<div>
 						<NavLink to="/">
 							<ReactRotatingText
@@ -34,6 +28,12 @@ const Navbar = () => {
 							/>
 						</NavLink>
 					</div>
+
+					<li className="item">
+						<NavLink to="/about-me" className="nav-links">
+							About Me <i />
+						</NavLink>
+					</li>
 				</div>
 			</div>
 			{/* <div className="mobile-navbar-container" ref={node}>

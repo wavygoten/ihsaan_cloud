@@ -36,6 +36,27 @@
 	border-radius: 50%;
 	background-size: cover;
 }
+
+.back-btn {
+	border: none;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+	cursor: pointer;
+	font-size: medium;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1.25rem 0 0 1.25rem;
+}
+
+.back-btn:hover {
+	transition: all 200ms ease-out;
+	box-shadow: 0 -1px 0 0 white inset;
+	cursor: pointer;
+}
+
 .modal-title {
 	margin-top: 4rem;
 	justify-content: center;
