@@ -1,10 +1,10 @@
 version: "3.7"
 
 services:
-  hello-world-prod:
+  ihsaan-cloud-prod:
     container_name: ihsaan-cloud-prod
     build:
       context: .
       dockerfile: Dockerfile.prod
     ports:
-      - "8898:80"
+      - "9421:80"

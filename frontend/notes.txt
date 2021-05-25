@@ -1,3 +1,31 @@
+ssh into amazon ec2:
+
+ssh -i "Mac-key-pair.pem" ec2-user@ec2-3-23-98-76.us-east-2.compute.amazonaws.com
+
+sudo yum update -y
+
+sudo yum install -y docker
+
+sudo yum install git
+
+sudo usermod -aG docker ec2-user
+
+git clone https://github.com/wavygoten/ihsaan_cloud.git
+
+cd ihsaan_cloud/frontend
+
+sudo systemctl restart docker
+
+docker build -f Dockerfile.prod -t ihsaan-cloud:prod .
+
+docker run -it --rm -p 9421:80 ihsaan-cloud:prod
+
+docker ps
+
+docker exec -it container-id sh
+
+git clone 
+
 DEVELOP CONTAINER
 
 commands: 
