@@ -18,13 +18,32 @@ sudo systemctl restart docker
 
 docker build -f Dockerfile.prod -t ihsaan-cloud:prod .
 
-docker run -it --rm -p 9421:80 ihsaan-cloud:prod
+docker run -it --rm -p 9421:9421 ihsaan-cloud:prod || docker run -d -p 9421:9421 ihsaan-cloud:prod
 
 docker ps
 
 docker exec -it container-id sh
 
+docker-compose -f docker-compose.prod.yaml up -d --build
+
+
+
 git clone 
+
+
+
+
+ECR/ECS
+
+docker build -f Dockerfile.prod -t ihsaan-cloud:prod .
+
+docker run -it --rm -p 9421:80 ihsaan-cloud:prod
+
+docker images
+
+docker tag ihsaan-cloud:prod 812778891702.dkr.ecr.us-east-2.amazonaws.com/ihsaan-cloud-prod
+
+docker push 812778891702.dkr.ecr.us-east-2.amazonaws.com/ihsaan-cloud-prod
 
 DEVELOP CONTAINER
 
