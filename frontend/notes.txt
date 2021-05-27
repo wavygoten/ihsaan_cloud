@@ -25,6 +25,12 @@ docker build -f Dockerfile.prod -t ihsaan-cloud:prod .
 --
 docker run -d -it --rm -p 9421:80 ihsaan-cloud:prod || docker run -d -p 9421:9421 ihsaan-cloud:prod
 
+
+stop and remove dockers:
+
+docker container stop $(docker container ls -aq)
+
+
 docker ps
 
 docker exec -it container-id sh
@@ -135,3 +141,28 @@ docker exec -it container-id sh
 stop container
 
 docker stop container id
+
+
+
+aws ec2 
+
+create vpc
+
+create instance 
+
+
+launch webapp on instance localhost:port (port=9421)
+
+sudo iptables to from port 80 to port hosted reactapp
+
+try using pm2 next time lowkeyyyyy
+
+docker n nginx setup
+
+elastic ips and point dns to namecheap.
+
+use session  manager to port forward 80 to 9421
+
+
+
+aws ssm start-session --target i-0064fb32ee96099b1 --document-name AWS-StartPortForwardingSession --parameters '{"portNumber":["80"], "localPortNumber":["9421"]}'
