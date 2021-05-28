@@ -26,9 +26,8 @@
 		"build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"predeploy": "docker container stop $(docker container ls -aq)",
-		"deploy": "docker build -f Dockerfile.prod -t ihsaan-cloud:prod .",
-		"postdeploy": "docker run -d -it --rm -p 9421:80 ihsaan-cloud:prod"
+		"predeploy": "docker build -f Dockerfile.prod -t ihsaan-cloud:prod .",
+		"deploy": "docker run -d -it --rm -p 9421:80 ihsaan-cloud:prod"
 	},
 	"eslintConfig": {
 		"extends": [
