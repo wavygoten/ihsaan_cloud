@@ -66,12 +66,18 @@ docker build -t ihsaan-cloud:dev .
 
 
 run container:
+
 docker run -it --rm \
 -v ${PWD}:/app \
 -v /app/node_modules \
 -p 3001:3000 \
 -e CHOKIDAR_USEPOLLING=true \
 ihsaan-cloud:dev  
+
+
+dev command: 
+
+docker run -p 3001:3000 -v /app/node_modules ihsaan-cloud:dev
 
 Stop the container:
 
@@ -166,3 +172,14 @@ use session  manager to port forward 80 to 9421
 
 
 aws ssm start-session --target i-0064fb32ee96099b1 --document-name AWS-StartPortForwardingSession --parameters '{"portNumber":["80"], "localPortNumber":["9421"]}'
+
+
+certificate public certificate
+
+aws acm request-certificate \
+--domain-name www.example.com \
+--validation-method DNS \
+--idempotency-token 1234 \
+--options CertificateTransparencyLoggingPreference=DISABLED
+
+aws acm request-certificate --domain-name www.ihsaan.cloud --validation-method 

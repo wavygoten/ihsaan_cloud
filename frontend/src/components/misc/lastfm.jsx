@@ -57,13 +57,14 @@ const LastFM = () => {
 	if (lastFM.status !== "playing") {
 		return (
 			<Para className="spotify-footer">
-				<RedCircle /> Spotify Offline
+				<RedCircle className="red-circle" /> Spotify Offline
 			</Para>
 		);
 	}
 	return (
 		<Para className="spotify-footer">
-			<Circle /> Listening to <b>{lastFM.song.name}</b> by{" "}
+			<Circle className="green-circle" /> Listening to <b>{lastFM.song.name}</b>{" "}
+			by{" "}
 			<b>
 				<i>{lastFM.song.artist}</i>
 			</b>
