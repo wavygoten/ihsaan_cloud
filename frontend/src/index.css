@@ -30,6 +30,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
+	height: 100%;
 }
 
 code {
@@ -145,10 +146,6 @@ code {
 		font-size: 14.5px;
 	}
 	/* NAVBAR */
-
-	.content {
-		min-height: -webkit-fill-available;
-	}
 
 	/* Footer */
 
