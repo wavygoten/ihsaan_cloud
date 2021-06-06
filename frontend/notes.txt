@@ -12,6 +12,10 @@ sudo usermod -aG docker ec2-user
 
 sudo reboot 
 
+allow admin access to shell script: chmod +x filename.sh
+save git creds:
+git config --global credential.helper store
+
 git clone https://github.com/wavygoten/ihsaan_cloud.git
 
 cd ihsaan_cloud/frontend

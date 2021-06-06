@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
+// import home from "../components/pages/Home";
 const home = lazy(() => import("../components/pages/Home"));
 const about = lazy(() => import("../components/pages/About"));
 const Navbar = lazy(() => import("../components/Navbar.jsx"));

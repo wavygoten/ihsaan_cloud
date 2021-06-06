@@ -18,6 +18,7 @@ html {
 	overflow-y: auto;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	height: -webkit-fill-available;
 }
 
 body {
@@ -27,6 +28,8 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 }
 
 code {
@@ -142,6 +145,10 @@ code {
 		font-size: 14.5px;
 	}
 	/* NAVBAR */
+
+	.content {
+		min-height: -webkit-fill-available;
+	}
 
 	/* Footer */
 
