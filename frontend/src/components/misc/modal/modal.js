@@ -16,10 +16,10 @@ const Popup = () => {
 				<div className="modal-description">
 					<ul>
 						<li>Javascript</li>
-						<li>Python</li>
 						<li>React</li>
-						<li>Django</li>
+						<li>Python</li>
 						<li>Express</li>
+						<li>Docker</li>
 						<li>Node</li>
 					</ul>
 				</div>

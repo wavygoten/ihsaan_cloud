@@ -129,6 +129,12 @@ code {
 
 /** MEDIA QUERIES **/
 
+/* chrome and safari web browsers*/
+/* 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	min-height: calc(100vh - 225px);
+} */
+
 /* mobile*/
 @media (max-width: 480px) {
 	/* NAVBAR */
