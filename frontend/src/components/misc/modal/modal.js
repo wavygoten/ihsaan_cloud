@@ -70,7 +70,7 @@ const Popup = () => {
 						>
 							⇐ Back
 						</button>
-						<div className="modal-title">Ihsaan Bijapuri</div>
+						<div className="modal-title">Ihsaan B</div>
 						{/* <div className="modal-description">{all}</div> */}
 						{all}
 						{/* change to button and render state */}
