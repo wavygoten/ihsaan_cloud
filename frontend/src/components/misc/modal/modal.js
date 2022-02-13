@@ -15,12 +15,12 @@ const Popup = () => {
 			<>
 				<div className="modal-description">
 					<ul>
-						<li>Javascript</li>
 						<li>React</li>
-						<li>Python</li>
-						<li>Express</li>
-						<li>Docker</li>
-						<li>Node</li>
+						<li>Typescript</li>
+						<li>Postgres</li>
+						<li>NodeJS</li>
+						<li>TailwindCSS</li>
+						<li>Dev Ops</li>
 					</ul>
 				</div>
 				<span className="modal-footer" onClick={getAbout}>
@@ -84,27 +84,18 @@ const Popup = () => {
 						<div className="modal-icons">
 							<li>
 								<a
-									href="https://twitter.com/dev_ihshuu"
+									href="https://twitter.com/ihsxxnb"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
 									<img src={twitterlogo} alt="" />
 								</a>
 							</li>
+
 							<li>
 								{" "}
 								<a
-									href="https://github.com/wavygoten"
-									target="_blank"
-									rel="noopener noreferrer nofollow"
-								>
-									<img src={github} alt="" />
-								</a>
-							</li>
-							<li>
-								{" "}
-								<a
-									href="https://instagram.com/ihsaan_bijapuri"
+									href="https://instagram.com/ihsxxnb"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
